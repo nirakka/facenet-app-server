@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  def hello
-    render html: "Hello akari"
+  def home
+    @rankings = Ranking.all
+    render "layouts/test"
   end
 end
