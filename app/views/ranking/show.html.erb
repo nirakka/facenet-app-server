@@ -1,0 +1,13 @@
+<h1>Rankingへアップロード</h1>
+
+<p style="color:red">アップロードで特徴量抽出も同時に行うため、かなり時間がかかります。ご注意ください</p>
+<div class="panel panel-default">
+<%= bootstrap_form_tag url: '/upload' do |f| %>
+<%= f.text_field :person1, value: '' %>
+<%= f.file_field :image1 %>
+<%= f.text_field :person2, value: '' %>
+<%= f.file_field :image2 %>
+<%= f.submit %>
+<% end %>
+</div>
+
