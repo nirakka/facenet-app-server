@@ -5,8 +5,9 @@
   <div class="panel-heading"><%= i %>位 <%= ranking.person1 %>(左)  vs <%= ranking.person2 %>(右)</div>
   <div class="panel-body">
     <div class="row">
-      <div class="col-sm-6"><%= image_tag("/#{ranking.person1_path}", style: 'height:auto;width:100%;') %></div>
-      <div class="col-sm-6"><%= image_tag("/#{ranking.person2_path}", style: 'height:auto;width:100%;' ) %></div>
+      <div class="col-sm-5"><%= image_tag("/#{ranking.person1_path}", style: 'max-height:300px;width:auto;') %></div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5"><%= image_tag("/#{ranking.person2_path}", style: 'max-height:300px;width:auto;' ) %></div>
     </div>
     <div>
       euclidean distance:<%= ranking.score %>
