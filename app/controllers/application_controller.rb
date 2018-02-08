@@ -43,7 +43,7 @@ class ApplicationController < ActionController::Base
   end
 
   def apipost(file1, file2)
-    request_url = "https://www.floydlabs.com/expose/PoggXEFQisnpb2qWRR3YqE"
+    request_url = "https://www.floydlabs.com/expose/XXXXXX" # set api URL
     agent = Mechanize.new
     response = agent.post(request_url, {
                             file1:  file1,
